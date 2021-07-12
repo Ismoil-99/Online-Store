@@ -1,0 +1,125 @@
+.Header{
+    width: 100%;
+    height: 80px;
+    background: #C9D7E0;
+    box-shadow: 1px 2px 3px black;
+    display: flex;
+}
+.Header .HeaderLogo{
+    flex: 10%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Header .HeaderLogo h2{
+    padding: 0;
+    color: #22A7F2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Header .HeaderNavbar{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Header .HeaderNavbar a{
+    text-decoration: none;
+    color: #22A7F2;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+}
+.Header .HeaderSearch{
+    flex: 25%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.Header .HeaderSearch .HeaderSearchInput #outlined-basic{
+    height: 10px;
+    color: #22A7F2;
+    margin-left: 15px;
+}
+.Header .HeaderSearch .HeaderSearchButton #ButtonSearch{
+    height: 45px;
+    background: #22A7F2;
+    margin-left: 10px;
+}
+.Header .HeaderButtons{
+   display: none;
+}
+
+
+.HeaderAll .SliderImg{
+    background: red;
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:650px){
+    .Header{
+        display: block;
+    }
+    .Header .HeaderNavbar{
+        display: none;
+    }
+    .Header .HeaderLogo{
+        display: none;
+    }
+    .Header .HeaderButtons{
+        flex: 5%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 37px;
+    }
+    .Header .HeaderButtons h3{
+        margin: 0 auto;
+        color: #22A7F2;
+    }
+    .Header  #hidden{
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 30px;
+        background-color: #CBDBE1;
+        transition:  1s cubic-bezier(0, 0, 1, 1) 500ms;
+    
+    }
+    .Header #hidden a{
+        margin: 10px;
+    }
+    
+}
